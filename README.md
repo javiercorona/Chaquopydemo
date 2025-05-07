@@ -1,8 +1,9 @@
+
 # Advanced Python Terminal
 
 > A feature-rich cross-platform command-line terminal with file management, system utilities, image processing, and data analysis capabilities.
 
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/) [![License: MIT](https://img.shields.io/badge/license-MIT-green)](#license)
+&#x20;
 
 ## Table of Contents
 
@@ -47,13 +48,154 @@
 
 ## Usage
 
-Run the terminal interface:
+Follow these steps to get started and explore all features:
 
-```bash
-python terminal.py
-```
+1. **Launch the Terminal**
+   Open your shell/terminal and run:
 
-Type `help` to see the full list of available commands.
+   ```bash
+   python terminal.py
+   ```
+
+   You will see a prompt like `>>>`, indicating the app is ready.
+
+2. **Access the Help Menu**
+   At any time, type:
+
+   ```bash
+   help
+   ```
+
+   This lists every command with a brief description. Handy for navigation.
+
+3. **Navigate Directories**
+
+   * List files and folders:
+
+     ```bash
+     cdir
+     ```
+   * Change into a folder:
+
+     ```bash
+     cd projects
+     ```
+   * Return to the home directory:
+
+     ```bash
+     cd ~
+     ```
+
+4. **Manage Files**
+
+   * Read a file:
+
+     ```bash
+     read notes.txt
+     ```
+   * Create or overwrite a file (interactive):
+
+     ```bash
+     write diary.txt
+     ```
+   * Append text to an existing file:
+
+     ```bash
+     append log.txt
+     ```
+   * Remove a file:
+
+     ```bash
+     remove temp.txt
+     ```
+
+5. **Text & Data Inspection**
+
+   * Search for text inside files:
+
+     ```bash
+     find report.md "TODO"
+     ```
+   * Pretty-print JSON or YAML:
+
+     ```bash
+     json config.json
+     yaml settings.yaml
+     ```
+   * View first 10 lines of a CSV:
+
+     ```bash
+     f data.csv 10
+     ```
+
+6. **Perform Calculations**
+
+   * Simple math:
+
+     ```bash
+     calc "(5+3)*2"
+     ```
+   * Temperature conversion:
+
+     ```bash
+     tconv 1 100   # 100°C to Kelvin
+     ```
+
+7. **Network & System Tools**
+
+   * Check internet speed:
+
+     ```bash
+     speedtest
+     ```
+   * Ping a host:
+
+     ```bash
+     ping example.com
+     ```
+   * Look up DNS records:
+
+     ```bash
+     dns-lookup example.com
+     ```
+
+8. **Image Processing**
+
+   * Convert images to cartoon style:
+
+     ```bash
+     cartoonify photo.jpg cartoon.png
+     ```
+   * Create a pencil sketch:
+
+     ```bash
+     sketch portrait.png sketch.png
+     ```
+
+9. **Exiting & Clearing**
+
+   * Clear the screen buffer:
+
+     ```bash
+     clr
+     ```
+   * Quit the terminal interface:
+
+     ```bash
+     exit
+     ```
+
+10. **Shortcuts & Tips**
+
+    * Use the **Up/Down arrow keys** to cycle through command history.
+    * Tab completion is supported for file and directory names.
+    * You can chain OS shell commands by prefixing with `shell`, e.g.:
+
+      ```bash
+      shell ls -la
+      ```
+
+Once you’re comfortable, explore other specialized commands (image, translation, bill splitting, weather lookup, etc.) via the `help` menu. Enjoy your advanced Python terminal!
 
 ## Command Reference
 
